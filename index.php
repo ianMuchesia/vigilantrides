@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-</head>
-<body>
+<?php
+include_once "views/header.php";
+
+if(isset($_POST['login']))
+{
+    include_once 'views/add.php';
+}else{
+    include_once 'views/login.php';
+}
+include_once "views/footer.php";
+?>
     <!-- Tailwind CSS -->
 
     <!-- Login -->
@@ -18,6 +20,3 @@
 
 
 
-
-</body>
-</html>
